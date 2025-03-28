@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="font-dm-sans antialiased">
+    <!-- =========== HEADER =============== -->
+    <header
+      class="flex justify-center z-50 sticky top-0 transition-all ease-in-out duration-200 pt-3"
+    >
+      <nav
+        id="nav"
+        class="flex xl:w-[1200px] w-full items-center justify-between py-3 rounded-full pl-6 pr-3 shadow border border-[var(--border)] bg-[var(--background)]/50 backdrop-blur"
+      >
+        <a href="/index.html" class="text-2xl font-bold relative">
+          <div
+            class="h-12 bg-[var(--primary)] w-10 absolute top-1/2 -translate-y-1/2 -left-4 rounded-l-full"
+          ></div>
+          <p class="relative z-50">Baral & Brothers</p>
+        </a>
+        <ul class="lg:flex items-center font-medium text-sm hidden">
+          <li>
+            <a
+              href="/sierra-japan-enterprises.html"
+              class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              >Sierra Japan Enterprises</a
+            >
+          </li>
+          <li>
+            <a
+              href="/nepali-dining.html"
+              class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              >Nepli Dining</a
+            >
+          </li>
+          <li>
+            <a
+              href="/baral-engineering.html"
+              class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              >Baral Engineering</a
+            >
+          </li>
+          <li>
+            <a
+              href="/sasto-sulav-express.html"
+              class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              >Sasto Sulav Express</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about.html"
+              class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              >ABOUT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- ============ HOME BANNER ============ -->
+        <section
+          class="py-4 h-[60dvh] animate__zoomIn animate__faster animate__animated"
+        >
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 items-stretch gap-4 h-full"
+          >
+            <a
+              href="baral-engineering.html"
+              class="col-span-2 sm:col-span-1 md:col-span-2 h-full relative group overflow-hidden rounded-xl cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="baral-engineering"
+                class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out object-center"
+              />
+              <div
+                class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
+              ></div>
+              <h3
+                class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+              >
+                Baral Engineering
+              </h3>
+            </a>
+            <div
+              class="col-span-2 sm:col-span-1 md:col-span-2 items-stretch h-full space-y-4 flex flex-col"
+            >
+              <a
+                href="/nepali-dining.html"
+                class="relative group overflow-hidden rounded-xl cursor-pointer flex-grow"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="nepali-dining"
+                  class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out object-center"
+                />
+                <div
+                  class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
+                ></div>
+                <h3
+                  class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+                >
+                  Nepali Dining
+                </h3>
+              </a>
+              <a
+                href="/sasto-sulav-express.html"
+                class="relative group overflow-hidden rounded-xl cursor-pointer flex-grow"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="sasto-sulav-express"
+                  class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out object-center"
+                />
+                <div
+                  class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
+                ></div>
+                <h3
+                  class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+                >
+                  Sasto Sulav Express
+                </h3>
+              </a>
+            </div>
+            <a
+              href="/sierra-japan-enterprises.html"
+              class="col-span-2 sm:col-span-1 md:col-span-1 h-full group relative overflow-hidden rounded-xl cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1512757776214-26d36777b513?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="sierra-japan-enterprises"
+                class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out object-center"
+              />
+              <div
+                class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
+              ></div>
+              <h3
+                class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+              >
+                Sierra Japan Enterprises
+              </h3>
+            </a>
+          </div>
+        </section>
+
+        <!-- ========= FEATURED TOPICS =========== -->
+        <section class="py-20 space-y-10">
+          <h1
+            class="text-xl uppercase text-[var(--muted-foreground)] font-semibold text-center"
+          >
+            Explore Featured Topics
+          </h1>
+          <div
+            class="flex flex-wrap justify-center md:w-[80%] mx-auto items-center md:gap-6 gap-3"
+          >
+            <a href="baral-engineering.html">
+              <div
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+              >
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+
+                Technology
+              </div>
+            </a>
+            <a href="sierra-japan-enterprises.html">
+              <div
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+              >
+                <i class="fa fa-plane" aria-hidden="true"></i>
+
+                Sierra Japan Enterprises
+              </div>
+            </a>
+            <a href="sasto-sulav-express.html">
+              <div
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+              >
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+
+                Groceries
+              </div>
+            </a>
+            <a href="nepali-dining.html">
+              <div
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+              >
+                <i class="fa fa-glass" aria-hidden="true"></i>
+
+                Nepali Dining
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- =============== HOME CONTENT WITH IMAGES AND TEXT ============== -->
+      <article class="lg:space-y-14 bg-[var(--secondary)] py-20">
+        <section
+          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+        >
+          <div
+            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Baral Engineering"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold">Baral Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                vel, sequi facilis perferendis recusandae deserunt deleniti ea
+                repudiandae velit aperiam incidunt cumque similique dicta
+                excepturi nesciunt sint, esse odio maiores?
+              </p>
+            </div>
+            <div>
+              <a href="baral-engineering.html">
+                <button
+                  class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
+                >
+                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                    Know More
+                  </span>
+                  <div
+                    class="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]"
+                  >
+                    <div class="mr-3.5 flex items-center justify-center">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-neutral-50"
+                      >
+                        <path
+                          d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+        >
+          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold">Sasto Sulav Express</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                vel, sequi facilis perferendis recusandae deserunt deleniti ea
+                repudiandae velit aperiam incidunt cumque similique dicta
+                excepturi nesciunt sint, esse odio maiores?
+              </p>
+            </div>
+            <div>
+              <a href="sasto-sulav-express.html">
+                <button
+                  class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
+                >
+                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                    Know More
+                  </span>
+                  <div
+                    class="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]"
+                  >
+                    <div class="mr-3.5 flex items-center justify-center">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-neutral-50"
+                      >
+                        <path
+                          d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            data-aos="fade-left"
+          >
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664551734602-49640bd82eba?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="sasto-sulav-express"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </section>
+        <section
+          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+        >
+          <div
+            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1504598318550-17eba1008a68?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="nepali-dining"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold">Nepali Dining</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                vel, sequi facilis perferendis recusandae deserunt deleniti ea
+                repudiandae velit aperiam incidunt cumque similique dicta
+                excepturi nesciunt sint, esse odio maiores?
+              </p>
+            </div>
+            <div>
+              <a href="nepali-dining.html">
+                <button
+                  class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
+                >
+                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                    Know More
+                  </span>
+                  <div
+                    class="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]"
+                  >
+                    <div class="mr-3.5 flex items-center justify-center">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-neutral-50"
+                      >
+                        <path
+                          d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+        >
+          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+            <div class="space-y-6">
+              <h3 class="text-5xl font-semibold">Sierra Japan Enterprises</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                vel, sequi facilis perferendis recusandae deserunt deleniti ea
+                repudiandae velit aperiam incidunt cumque similique dicta
+                excepturi nesciunt sint, esse odio maiores?
+              </p>
+            </div>
+            <div>
+              <a href="sierra-japan-enterprises.html">
+                <button
+                  class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
+                >
+                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                    Know More
+                  </span>
+                  <div
+                    class="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]"
+                  >
+                    <div class="mr-3.5 flex items-center justify-center">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-neutral-50"
+                      >
+                        <path
+                          d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            data-aos="fade-left"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1504598318550-17eba1008a68?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="sierra-japan-enterprises"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- ================ FOOTER ================ -->
+    <footer id="footer" class="bg-[var(--muted)] py-4 text-center"></footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
