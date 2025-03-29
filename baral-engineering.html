@@ -11,8 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
-    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
   </head>
   <body class="font-dm-sans antialiased">
     <!-- =========== HEADER =============== -->
@@ -85,39 +83,39 @@
               <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </button>
           </div>
-          <ul class="font-medium text-sm space-y-6">
+          <ul class="font-medium text-sm space-y-6" id="sidebarLinks">
             <li>
               <a
                 href="/sierra-japan-enterprises.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sierra Japan Enterprises</a
               >
             </li>
             <li>
               <a
                 href="/nepali-dining.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >NEPALI Dining</a
               >
             </li>
             <li>
               <a
                 href="/baral-engineering.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Baral Engineering</a
               >
             </li>
             <li>
               <a
                 href="/sasto-sulav-express.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sasto Sulav Express</a
               >
             </li>
             <li>
               <a
                 href="/about.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >ABOUT</a
               >
             </li>
@@ -133,12 +131,14 @@
     </div>
 
     <!-- ========== MAIN CONTENT ========= -->
-    <main class="pb-10">
+    <main class="md:pb-10">
       <!-- =========== PAGE BANNER ============== -->
-      <div class="w-full h-[55rem] overflow-hidden items-center flex px-8">
-        <div class="flex">
+      <div
+        class="w-full lg:h-[55rem] lg:pt-0 pt-20 overflow-hidden items-center flex px-8 relative"
+      >
+        <div class="lg:flex relative">
           <h1
-            class="text-6xl font-thin font-lexend md:w-[55%] leading-[5.5rem] tracking-widest"
+            class="text-4xl lg:text-5xl xl:text-6xl font-thin font-lexend lg:w-[45%] lg:w-[55%] leading-tight lg:leading-[4.5rem] xl:leading-[5.5rem] tracking-wide xl:tracking-widest pr-4 lg:pr-8"
           >
             DISCOVER THE LATEST IN ENGINEERING AND TECHNOLOGY INNOVATIONS AND
             TRENDS
@@ -146,30 +146,63 @@
           <img
             src="/assets/engineering.png"
             alt="banner"
-            class="object-cover h-full w-full"
+            class="object-contain h-full w-full"
           />
         </div>
       </div>
-      <div class="container py-20 space-y-36">
-        <!-- ========== SUB BANNER ============= -->
+      <div class="container py-20 md:space-y-36 space-y-20">
+        <!-- ========== CTA BANNER ============= -->
         <section
-          class="w-full bg-gradient-to-b from-indigo-950 to-black/80 p-8 relative overflow-hidden rounded-xl"
+          class="w-full bg-gradient-to-br from-slate-50 to-blue-50 p-6 sm:p-8 md:p-12 relative overflow-hidden rounded-xl shadow-sm border border-slate-100"
         >
+          <div class="absolute inset-0 overflow-hidden">
+            <div
+              class="absolute -top-24 -right-24 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute top-1/2 -left-24 w-72 h-72 bg-indigo-100/40 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute bottom-0 right-1/4 w-40 h-40 bg-sky-100/30 rounded-full blur-3xl"
+            ></div>
+          </div>
           <div
-            class="max-w-6xl mx-auto flex items-center justify-between relative"
+            class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 gap-8 md:gap-10"
           >
-            <div class="flex-1 space-y-4">
-              <h2 class="text-4xl font-bold tracking-tight text-white">
-                Prevent costly mistakes
+            <div class="flex-1 space-y-4 sm:space-y-6 text-center md:text-left">
+              <h2
+                class="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-slate-800 leading-tight"
+              >
+                Prevent costly
+                <span class="text-blue-500 font-semibold">mistakes</span>
               </h2>
-              <p class="text-neutral-600 text-lg">
+              <p
+                class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto md:mx-0 font-light"
+              >
                 Create pre-approved templates and lock all legal information.
               </p>
               <a
-                class="border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors animate-shimmer border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 flex h-12 w-fit px-8 text-whhite items-center gap-2 rounded-sm"
+                class="inline-flex h-10 sm:h-12 items-center justify-center rounded-full px-6 sm:px-8 py-2 sm:py-3 font-medium text-white relative overflow-hidden group"
                 href="tel:9800000000"
               >
-                <p class="text-white">Let's Connect</p>
+                <span
+                  class="absolute inset-0 bg-[linear-gradient(110deg,#4f46e5,#3b82f6,#60a5fa,#3b82f6,#4f46e5)] bg-[length:200%_100%] animate-shimmer-x"
+                ></span>
+                <span class="relative z-10 flex items-center gap-2">
+                  Let's Connect
+                  <svg
+                    class="ml-1 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 group-hover:translate-x-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M5 12h14m-7-7l7 7-7 7" />
+                  </svg>
+                  <!-- <ArrowRight
+                className={`ml-1 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 ${isHovered ? "translate-x-1" : ""}`}
+              /> -->
+                </span>
                 <svg
                   class="ml-2 w-4 h-4 text-white"
                   viewBox="0 0 24 24"
@@ -179,24 +212,30 @@
                 >
                   <path d="M5 12h14m-7-7l7 7-7 7" />
                 </svg>
+                <span
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:animate-shimmer-shine"
+                ></span>
               </a>
             </div>
 
-            <img
-              src="/assets/credit_card.png"
-              alt="Person talking"
-              class="object-contain size-40"
-            />
+            <div class="relative mt-8 md:mt-0">
+              <div
+                class="absolute inset-0 bg-blue-200/30 rounded-full blur-xl transform -translate-y-4 translate-x-4"
+              ></div>
+              <img
+                src="/assets/credit_card.png"
+                alt="Credit card illustration"
+                class="relative object-contain w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 drop-shadow-xl transform transition-transform hover:scale-105 duration-500"
+              />
+            </div>
           </div>
         </section>
 
         <!-- =========== FACILITIES =========== -->
-        <section class="space-y-6">
-          <h3 class="text-5xl font-semibold">Our Top Facilities</h3>
+        <section class="md:space-y-6 space-y-10">
+          <h3 class="md:text-5xl text-4xl font-semibold">Our Top Facilities</h3>
           <!-- ============= FACILITIES CARDS =========== -->
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-6"
-          >
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div
               class="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden"
             >
@@ -323,8 +362,10 @@
 
         <!-- ================ ABOUT ================= -->
         <article class="space-y-6">
-          <h1 class="text-5xl font-semibold">Who are we ?</h1>
-          <p>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold">
+            Who are we ?
+          </h1>
+          <p class="text-sm sm:text-base md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum
             nam blanditiis inventore aliquam tempora aspernatur laborum nostrum
             iste minus. Error fuga facere obcaecati quo voluptas ad ullam enim
@@ -343,9 +384,6 @@
             numquam, eius ut dolor!
           </p>
         </article>
-      </div>
-      <div class="embla hidden">
-        <div class="embla__container"></div>
       </div>
     </main>
 

@@ -2,53 +2,30 @@ AOS.init({
   once: true,
 });
 
-const emblaNode = document.querySelector(".embla");
-const options = { loop: false };
-const plugins = [EmblaCarouselAutoplay()];
-const emblaApi = EmblaCarousel(emblaNode, options, plugins);
-
-const prevBtn = document.querySelector(".embla__prev");
-const nextBtn = document.querySelector(".embla__next");
-
-if (prevBtn && nextBtn) {
-  prevBtn.addEventListener("click", () => emblaApi.scrollPrev());
-  nextBtn.addEventListener("click", () => emblaApi.scrollNext());
-
-  const updatePrevNextBtns = () => {
-    if (emblaApi.canScrollPrev()) {
-      prevBtn.removeAttribute("disabled");
-    } else {
-      prevBtn.setAttribute("disabled", "disabled");
-    }
-
-    if (emblaApi.canScrollNext()) {
-      nextBtn.removeAttribute("disabled");
-    } else {
-      nextBtn.setAttribute("disabled", "disabled");
-    }
-  };
-
-  emblaApi
-    .on("select", updatePrevNextBtns)
-    .on("init", updatePrevNextBtns)
-    .on("reInit", updatePrevNextBtns);
-}
-
 function setActiveLink() {
   const currentPath = window.location.pathname;
   const nav = document.getElementById("nav");
   const navLinks = nav.querySelectorAll("ul a");
+  const sidebarLinks = document
+    .querySelector(".sidebar")
+    .querySelectorAll("ul a");
 
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPath) {
-      link.classList.add("bg-[var(--secondary)]");
-    } else {
-      link.classList.remove("bg-[var(--secondary)]");
-    }
-  });
+  const setActiveState = (links) => {
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("bg-[var(--secondary)]");
+      } else {
+        link.classList.remove("bg-[var(--secondary)]");
+      }
+    });
+  };
+
+  setActiveState(navLinks);
+  setActiveState(sidebarLinks);
 
   if (currentPath === "/" || currentPath === "/index.html") {
     navLinks.forEach((link) => link.classList.remove("active"));
+    sidebarLinks.forEach((link) => link.classList.remove("active"));
   }
 }
 

@@ -11,8 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
-    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
   </head>
   <body class="font-dm-sans antialiased">
     <!-- =========== HEADER =============== -->
@@ -85,39 +83,39 @@
               <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </button>
           </div>
-          <ul class="font-medium text-sm space-y-6">
+          <ul class="font-medium text-sm space-y-6" id="sidebarLinks">
             <li>
               <a
                 href="/sierra-japan-enterprises.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sierra Japan Enterprises</a
               >
             </li>
             <li>
               <a
                 href="/nepali-dining.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >NEPALI Dining</a
               >
             </li>
             <li>
               <a
                 href="/baral-engineering.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Baral Engineering</a
               >
             </li>
             <li>
               <a
                 href="/sasto-sulav-express.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sasto Sulav Express</a
               >
             </li>
             <li>
               <a
                 href="/about.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >ABOUT</a
               >
             </li>
@@ -131,17 +129,17 @@
         </button>
       </div>
     </div>
-
     <main>
       <div class="container">
         <!-- ============ HOME BANNER ============ -->
-        <section class="py-4 min-h-[60dvh]" data-aos="fade-up">
+        <section class="py-4 md:min-h-[60dvh] h-auto" data-aos="fade-up">
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 items-stretch gap-4 h-full"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 items-stretch gap-4"
           >
+            <!-- First item -->
             <a
               href="baral-engineering.html"
-              class="col-span-2 sm:col-span-1 md:col-span-2 h-full relative group overflow-hidden rounded-xl cursor-pointer"
+              class="col-span-2 sm:col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl cursor-pointer h-[30dvh] sm:h-[40dvh] md:h-full"
             >
               <img
                 src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -154,15 +152,18 @@
               <h3
                 class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
               >
-                Baral Engineering
+                W Baral Engineering
               </h3>
             </a>
+
+            <!-- Middle column -->
             <div
-              class="col-span-2 sm:col-span-1 md:col-span-2 items-stretch h-full space-y-4 flex flex-col"
+              class="col-span-2 sm:col-span-1 md:col-span-2 flex flex-col gap-4"
             >
+              <!-- Nepali Dining -->
               <a
                 href="/nepali-dining.html"
-                class="relative group overflow-hidden rounded-xl cursor-pointer flex-grow"
+                class="relative group overflow-hidden rounded-xl cursor-pointer h-[30dvh] sm:h-[40dvh] md:h-[calc(50%-0.5rem)]"
               >
                 <img
                   src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -178,9 +179,11 @@
                   Nepali Dining
                 </h3>
               </a>
+
+              <!-- Sasto Sulav Express (Desktop) -->
               <a
                 href="/sasto-sulav-express.html"
-                class="relative group overflow-hidden rounded-xl cursor-pointer flex-grow"
+                class="relative group overflow-hidden rounded-xl cursor-pointer h-[30dvh] sm:h-[40dvh] md:h-[calc(50%-0.5rem)] hidden md:block"
               >
                 <img
                   src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -197,9 +200,11 @@
                 </h3>
               </a>
             </div>
+
+            <!-- Last item -->
             <a
               href="/sierra-japan-enterprises.html"
-              class="col-span-2 sm:col-span-1 md:col-span-1 h-full group relative overflow-hidden rounded-xl cursor-pointer"
+              class="col-span-2 sm:col-span-1 md:col-span-1 relative group overflow-hidden rounded-xl cursor-pointer h-[30dvh] sm:h-[40dvh] md:h-full"
             >
               <img
                 src="https://images.unsplash.com/photo-1512757776214-26d36777b513?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -213,6 +218,26 @@
                 class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
               >
                 Sierra Japan Enterprises
+              </h3>
+            </a>
+
+            <!-- Sasto Sulav Express (Mobile) -->
+            <a
+              href="/sasto-sulav-express.html"
+              class="relative group overflow-hidden rounded-xl cursor-pointer h-[30dvh] sm:h-[40dvh] block md:hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="sasto-sulav-express"
+                class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out object-center"
+              />
+              <div
+                class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
+              ></div>
+              <h3
+                class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+              >
+                Sasto Sulav Express
               </h3>
             </a>
           </div>
@@ -269,12 +294,12 @@
       </div>
 
       <!-- =============== HOME CONTENT WITH IMAGES AND TEXT ============== -->
-      <article class="lg:space-y-14 bg-[var(--secondary)] py-20">
+      <article class="space-y-14 bg-[var(--secondary)] py-20">
         <section
-          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+          class="container lg:h-[50rem] grid grid-cols-12 gap-x-8 lg:gap-y-0 gap-y-10"
         >
           <div
-            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            class="col-span-12 lg:col-span-6 lg:h-full md:h-[50dvh] h-[40dvh] overflow-hidden relative"
             data-aos="fade-right"
           >
             <img
@@ -285,7 +310,9 @@
           </div>
           <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold">Baral Engineering</h3>
+              <h3 class="lg:text-5xl text-4xl font-semibold">
+                Baral Engineering
+              </h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
                 vel, sequi facilis perferendis recusandae deserunt deleniti ea
@@ -328,11 +355,16 @@
           </div>
         </section>
         <section
-          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+          class="container lg:h-[50rem] grid grid-cols-12 lg:gap-x-8 lg:gap-y-0 gap-y-10 items-center"
         >
-          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+          <div
+            class="col-span-12 lg:col-span-6 space-y-10 lg:order-1 order-2"
+            data-aos="fade-up"
+          >
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold">Sasto Sulav Express</h3>
+              <h3 class="lg:text-5xl text-4xl font-semibold">
+                Sasto Sulav Express
+              </h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
                 vel, sequi facilis perferendis recusandae deserunt deleniti ea
@@ -374,7 +406,7 @@
             </div>
           </div>
           <div
-            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            class="col-span-12 lg:col-span-6 lg:h-full md:h-[50dvh] h-[40dvh] overflow-hidden p-0 relative lg:order-2 order-1"
             data-aos="fade-left"
           >
             <img
@@ -385,10 +417,10 @@
           </div>
         </section>
         <section
-          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+          class="container lg:h-[50rem] grid grid-cols-12 lg:gap-x-8 lg:gap-y-0 gap-y-10 items-center"
         >
           <div
-            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            class="col-span-12 lg:col-span-6 lg:h-full md:h-[50dvh] h-[40dvh] overflow-hidden p-0 relative"
             data-aos="fade-right"
           >
             <img
@@ -399,7 +431,7 @@
           </div>
           <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold">Nepali Dining</h3>
+              <h3 class="lg:text-5xl text-4xl font-semibold">Nepali Dining</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
                 vel, sequi facilis perferendis recusandae deserunt deleniti ea
@@ -442,11 +474,16 @@
           </div>
         </section>
         <section
-          class="container h-[50rem] grid grid-cols-12 lg:gap-8 gap-4 items-center"
+          class="container lg:h-[50rem] grid grid-cols-12 lg:gap-x-8 lg:gap-y-0 gap-y-10 items-center"
         >
-          <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
+          <div
+            class="col-span-12 lg:col-span-6 space-y-10 lg:order-1 order-2"
+            a-aos="fade-up"
+          >
             <div class="space-y-6">
-              <h3 class="text-5xl font-semibold">Sierra Japan Enterprises</h3>
+              <h3 class="lg:text-5xl text-4xl font-semibold">
+                Sierra Japan Enterprises
+              </h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
                 vel, sequi facilis perferendis recusandae deserunt deleniti ea
@@ -488,7 +525,7 @@
             </div>
           </div>
           <div
-            class="col-span-12 lg:col-span-6 h-full overflow-hidden p-0 relative"
+            class="col-span-12 lg:col-span-6 lg:h-full md:h-[50dvh] h-[40dvh] overflow-hidden p-0 relative lg:order-2 order-1"
             data-aos="fade-left"
           >
             <img
@@ -502,9 +539,6 @@
     </main>
     <!-- ================ FOOTER ================ -->
     <footer id="footer" class="bg-[var(--muted)] py-4 text-center"></footer>
-    <div class="embla hidden">
-      <div class="embla__container"></div>
-    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/script.js"></script>
   </body>
