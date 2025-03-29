@@ -86,11 +86,73 @@ html {
   animation: shimmer 2s infinite linear;
 }
 
+.animate-shimmer-x {
+  animation: shimmer-x 3s ease-in-out infinite;
+}
 @keyframes shimmer {
   0% {
     background-position: 0 0;
   }
   100% {
     background-position: -200% 0;
+  }
+}
+
+.animate-shimmer-shine {
+  animation: shimmer-shine 0.75s forwards;
+}
+
+@keyframes shimmer-shine {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes shimmer-x {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  min-width: 0;
+  flex: 0 0 var(--slide-size);
+}
+
+@media (min-width: 640px) {
+  .embla {
+    --slide-size: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla {
+    --slide-size: 33.333333%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .embla {
+    --slide-size: 20.5%;
   }
 }

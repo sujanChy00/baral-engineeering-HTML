@@ -13,8 +13,6 @@
     />
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
-
-    <!-- Remove the custom style tag since we'll use Tailwind -->
   </head>
   <body class="font-dm-sans antialiased">
     <!-- =========== HEADER =============== -->
@@ -87,39 +85,39 @@
               <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </button>
           </div>
-          <ul class="font-medium text-sm space-y-6">
+          <ul class="font-medium text-sm space-y-6" id="sidebarLinks">
             <li>
               <a
                 href="/sierra-japan-enterprises.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sierra Japan Enterprises</a
               >
             </li>
             <li>
               <a
                 href="/nepali-dining.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >NEPALI Dining</a
               >
             </li>
             <li>
               <a
                 href="/baral-engineering.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Baral Engineering</a
               >
             </li>
             <li>
               <a
                 href="/sasto-sulav-express.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >Sasto Sulav Express</a
               >
             </li>
             <li>
               <a
                 href="/about.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
                 >ABOUT</a
               >
             </li>
@@ -141,7 +139,7 @@
         <a
           href="https://tetoteto.co.jp/shop/sasto-sulav-express"
           target="_blank"
-          class="relative h-[60vh] block rounded-3xl overflow-hidden group"
+          class="relative md:h-[60vh] h-[40vh] block rounded-3xl overflow-hidden group"
         >
           <div
             class="h-full w-full bg-white/50 absolute inset-0 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex items-center justify-center z-50"
@@ -149,15 +147,15 @@
             <div
               class="flex items-center justify-center gap-2 translate-y-6 group-hover:translate-y-0 transition-all ease-in-out duration-500 delay-150"
             >
-              <p class="text-3xl text-[var(--muted-foreground)] font-lexend">
+              <p
+                class="md:text-3xl text-xl text-[var(--muted-foreground)] font-lexend"
+              >
                 Shop Now
               </p>
               <i
                 class="fa fa-arrow-right text-[var(--muted-foreground)] group-hover:translate-x-3 transition-all ease-in-out duration-500 delay-200 fa-2x"
                 aria-hidden="true"
               ></i>
-
-              <!-- <ArrowRight class="text-muted-foreground group-hover:translate-x-3 transition-all ease-in-out duration-500 delay-200" /> -->
             </div>
           </div>
           <img
@@ -196,11 +194,13 @@
                 ></i>
               </a>
             </div>
-            <span
+            <a
+              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+              target="_blank"
               class="absolute left-0 top-0 translate-y-full transition duration-300 ease-in-out group-hover:translate-y-0"
             >
               Sasto Sulav Express
-            </span>
+            </a>
           </div>
         </blockquote>
         <div class="relative" data-aos="fade-left">
@@ -217,13 +217,15 @@
       <!-- =========== SHOP ITEMS ========= -->
       <div class="pt-16 space-y-6">
         <div class="flex items-center justify-between">
-          <h3 class="text-3xl font-semibold text-[var(--secondary-foreground)]">
+          <h3
+            class="md:text-3xl text-2xl font-semibold text-[var(--secondary-foreground)]"
+          >
             Featured Products
           </h3>
           <a
             href="https://tetoteto.co.jp/shop/sasto-sulav-express"
             target="_blank"
-            class="text-[var(--accent-foreground)] flex items-center gap-x-1 hover:bg-gray-100 px-4 h-10 rounded-md"
+            class="text-[var(--accent-foreground)] flex items-center gap-x-1 hover:bg-gray-100 px-4 h-10 rounded-md sm:text-base text-sm"
           >
             Visit Shop <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
@@ -231,208 +233,231 @@
 
         <!-- ITEMS CAROUSEL -->
         <div class="embla overflow-hidden relative">
-          <div class="embla__container flex gap-4">
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://tetoteto.co.jp/shop/sasto-sulav-express"
-              target="_blank"
-              rel="noreferrer"
-              class="embla__slide flex-[0_0_calc(20%-12px)] min-w-0 shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
-            >
-              <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
-                <img
-                  src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
-                  alt="items"
-                  class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
-                />
-              </div>
-              <div class="p-4 space-y-3">
-                <h3 class="text-xl font-semibold">Mix Pickle 400g (Ambika)</h3>
-                <p class="text-[var(--secondary-foreground)]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit...
-                </p>
-              </div>
-            </a>
+          <div class="embla__viewport">
+            <div class="embla__container flex gap-4">
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://tetoteto.co.jp/shop/sasto-sulav-express"
+                target="_blank"
+                rel="noreferrer"
+                class="embla__slide shadow border border-[var(--border)] rounded-xl group hover:border-[var(--primary)]"
+              >
+                <div class="h-56 p-0 rounded-t-xl overflow-hidden relative">
+                  <img
+                    src="https://cdn.tetoteto.co.jp/item-images/a927942/a927942_1_1671590215517.jpeg"
+                    alt="items"
+                    class="object-contain h-full w-full group-hover:scale-125 transition-all ease-in-out duration-500"
+                  />
+                </div>
+                <div class="p-4 space-y-3">
+                  <h3 class="text-xl font-semibold">
+                    Mix Pickle 400g (Ambika)
+                  </h3>
+                  <p class="text-[var(--secondary-foreground)]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
+          <!-- ========== CAROUSEL NAVIGATION ========= -->
           <button
             class="embla__prev bg-[var(--background)] text-white px-4 py-2 rounded-lg hover:bg-[var(--accent)] border border-[var(--border)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed absolute top-1/2 left-4 -translate-y-1/2"
           >
@@ -454,7 +479,7 @@
         <div class="grid grid-cols-12 items-start gap-6">
           <div class="md:col-span-8 col-span-12">
             <!-- ============= SHOP INFO =============-->
-            <div class="space-y-6">
+            <div class="space-y-6 text-pretty md:text-base text-sm">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,
                 deserunt ipsum dicta voluptas repellat facere magni similique
@@ -537,13 +562,6 @@
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                   </div>
-                  <!-- <SocialIcons
-                class="flex items-center gap-4 static space-y-0"
-                urls={data?.links?.map((link) => ({
-                  type: link.type,
-                  url: link.url,
-                }))}
-              /> -->
                 </div>
               </div>
             </a>
@@ -555,6 +573,73 @@
     <!-- =========== FOOTER =============== -->
     <footer id="footer" class="bg-[var(--muted)] py-4 text-center"></footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const emblaNode = document.querySelector(".embla");
+      const options = {
+        loop: false,
+        dragFree: true,
+        autoplay: { delay: 0 },
+        containScroll: false,
+        align: "start",
+      };
+
+      const viewportNode = emblaNode.querySelector(".embla__viewport");
+      const prevBtnNode = document.querySelector(".embla__prev");
+      const nextBtnNode = document.querySelector(".embla__next");
+      const plugins = [EmblaCarouselAutoplay()];
+      const emblaApi = EmblaCarousel(viewportNode, options, plugins);
+
+      const addTogglePrevNextBtnsActive = (emblaApi, prevBtn, nextBtn) => {
+        const togglePrevNextBtnsState = () => {
+          if (emblaApi.canScrollPrev()) prevBtn.removeAttribute("disabled");
+          else prevBtn.setAttribute("disabled", "disabled");
+
+          if (emblaApi.canScrollNext()) nextBtn.removeAttribute("disabled");
+          else nextBtn.setAttribute("disabled", "disabled");
+        };
+
+        emblaApi
+          .on("select", togglePrevNextBtnsState)
+          .on("init", togglePrevNextBtnsState)
+          .on("reInit", togglePrevNextBtnsState);
+
+        return () => {
+          prevBtn.removeAttribute("disabled");
+          nextBtn.removeAttribute("disabled");
+        };
+      };
+
+      const addPrevNextBtnsClickHandlers = (emblaApi, prevBtn, nextBtn) => {
+        const scrollPrev = () => {
+          emblaApi.scrollPrev();
+        };
+        const scrollNext = () => {
+          emblaApi.scrollNext();
+        };
+        prevBtn.addEventListener("click", scrollPrev, false);
+        nextBtn.addEventListener("click", scrollNext, false);
+
+        const removeTogglePrevNextBtnsActive = addTogglePrevNextBtnsActive(
+          emblaApi,
+          prevBtn,
+          nextBtn
+        );
+
+        return () => {
+          removeTogglePrevNextBtnsActive();
+          prevBtn.removeEventListener("click", scrollPrev, false);
+          nextBtn.removeEventListener("click", scrollNext, false);
+        };
+      };
+
+      const removePrevNextBtnsClickHandlers = addPrevNextBtnsClickHandlers(
+        emblaApi,
+        prevBtnNode,
+        nextBtnNode
+      );
+
+      emblaApi.on("destroy", removePrevNextBtnsClickHandlers);
+    </script>
 
     <script src="/script.js"></script>
   </body>
