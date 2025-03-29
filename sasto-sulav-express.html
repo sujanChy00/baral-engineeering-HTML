@@ -468,6 +468,16 @@
           >
             <i class="fa fa-arrow-right text-black" aria-hidden="true"></i>
           </button>
+
+          <!-- ========== CAROUSEL PROGRESS ========= -->
+          <div class="flex justify-center pt-4">
+            <div class="embla__progress">
+              <div
+                class="embla__progress__bar"
+                style="transform: translate3d(0%, 0px, 0px)"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -637,7 +647,15 @@
         prevBtnNode,
         nextBtnNode
       );
+      const progressNode = emblaNode.querySelector(".embla__progress__bar");
 
+      const updateProgress = () => {
+        const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
+        progressNode.style.transform = `translateX(${progress * 100}%)`;
+      };
+
+      emblaApi.on("scroll", updateProgress);
+      emblaApi.on("reInit", updateProgress);
       emblaApi.on("destroy", removePrevNextBtnsClickHandlers);
     </script>
 
