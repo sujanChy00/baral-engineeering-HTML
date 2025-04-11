@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
   </head>
   <body class="font-dm-sans antialiased">
     <!-- =========== HEADER =============== -->
@@ -19,7 +21,7 @@
     >
       <nav
         id="nav"
-        class="flex xl:w-[1200px] w-full items-center justify-between py-3 rounded-full pl-6 pr-3 shadow border border-[var(--border)] bg-[var(--background)]/50 backdrop-blur"
+        class="flex xl:w-[1200px] w-full items-center justify-between py-3 rounded-full bg-[var(--background)]/50 backdrop-blur pl-6 pr-3"
       >
         <a href="/index.html" class="text-2xl font-bold relative">
           <div
@@ -69,7 +71,321 @@
         </button>
       </nav>
     </header>
+    <main>
+      <!-- ============= PAGE BANNER ============= -->
+      <section
+        class="lg:grid flex justify-center grid-cols-12 items-center gap-x-6 relative min-h-[83dvh] lg:bg-none bg-[url(/assets/daal_bhaat.webp)] bg-contain bg-center bg-no-repeat"
+      >
+        <div class="col-span-12 lg:col-span-6 relative">
+          <div class="relative lg:pl-20 lg:bg-yellow-300 py-6">
+            <h1
+              class="lg:text-9xl text-8xl font-medium font-atma font-lexend lg:block flex flex-col items-center"
+              data-aos="slide-right"
+            >
+              <span class="flex items-end gap-x-3">
+                Nepali
+                <img
+                  src="/assets/momos.webp"
+                  alt="momo"
+                  class="object-contain size-20 md:inline-block hidden"
+                />
+              </span>
+              Cuisines
+            </h1>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6 lg:block hidden">
+          <img
+            src="/assets/daal_bhaat.webp"
+            class="aspect-square md:object-cover object-contain"
+            alt="daal-bhaat"
+            data-aos="zoom-in"
+          />
+        </div>
+        <a
+          href="#menu"
+          class="rounded-full bg-gradient-to-r from-[var(--primary)] to-[#6192B3] px-4 py-2 absolute bottom-0 left-1/2 -translate-x-1/2 lg:hidden block"
+        >
+          see menu
+        </a>
+      </section>
 
+      <div class="container pt-20 space-y-36 pb-20">
+        <!-- =========== FACILITIES =========== -->
+        <section class="space-y-10">
+          <h3 class="text-5xl font-medium text-center">Our Facilities</h3>
+          <div
+            class="flex items-center lg:flex-nowrap flex-wrap gap-6 justify-center"
+          >
+            <div class="flex flex-col items-center gap-y-3">
+              <img class="size-40 rounded-full object-contain" src="/assets/hot_deals.png" alt="hot deals"></img>
+              <div class="text-center space-y-1">
+                <h6 class="text-xl font-medium">Hot Deals & Offers</h6>
+                <p class="text-sm md:max-w-52">
+                  We always have hot deals and offers for our customers.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-y-3">
+              <img class="size-40 rounded-full object-contain" src="/assets/chef.png" alt="amazing food"></img>
+              <div class="text-center space-y-1">
+                <h6 class="text-xl font-medium">Amazing Food</h6>
+                <p class="text-sm md:max-w-52">
+                  We always have hot deals and offers for our customers.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-y-3">
+              <img class="size-40 rounded-full object-contain" src="/assets/delivery_man.png" alt="delivery man"></img>
+              <div class="text-center space-y-1">
+                <h6 class="text-xl font-medium">Fast Delivery</h6>
+                <p class="text-sm md:max-w-52">
+                  We always have hot deals and offers for our customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========== GALLERY =========== -->
+        <section class="space-y-10">
+          <h3 class="text-5xl font-medium text-center">Gallery</h3>
+          <div class="embla overflow-hidden relative">
+            <div class="embla__viewport">
+              <div class="embla__container flex gap-4">
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-[0_0_80%]">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== CAROUSEL PROGRESS ========= -->
+            <div class="flex justify-center pt-4">
+              <div class="embla__progress">
+                <div
+                  class="embla__progress__bar"
+                  style="transform: translate3d(0%, 0px, 0px)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========== MENU =========== -->
+
+        <div
+          id="menu"
+          class="mx-auto max-w-4xl rounded-xl shadow-sm overflow-hidden"
+        >
+          <header
+            class="text-center py-10 px-6 border-b border-b-[var(--border)]"
+          >
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+              Our Menu
+            </h1>
+            <p class="text-gray-500">Seasonal & Locally Sourced Ingredients</p>
+          </header>
+
+          <div class="p-6 md:p-10">
+            <section>
+              <h2 class="text-2xl font-semibold mb-6">Appetizers</h2>
+              <div class="space-y-6">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="border-b border-b-[var(--border)] my-10 w-full"></div>
+            <section>
+              <h2 class="text-2xl font-semibold mb-6">Appetizers</h2>
+              <div class="space-y-6">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-baseline group"
+                >
+                  <div class="flex-1">
+                    <h3
+                      class="font-medium text-lg group-hover:text-gray-700 transition-colors"
+                    >
+                      Truffle Arancini
+                    </h3>
+                    <p class="text-gray-500 mt-1 text-sm">
+                      Crispy risotto balls with black truffle and mozzarella
+                    </p>
+                  </div>
+                  <div class="mt-1 md:mt-0 md:ml-4 font-medium text-gray-900">
+                    $14
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- =========== ABOUT =========== -->
+        <article class="space-y-10">
+          <h3 class="text-5xl font-medium text-center">About Us</h3>
+          <p class="text-center text-lg">
+            We are a family-owned restaurant that has been serving authentic
+            Nepali cuisine for over 20 years. Our mission is to provide our
+            customers with a warm and welcoming atmosphere, delicious food, and
+            exceptional service. We take pride in using only the freshest
+            ingredients and traditional cooking methods to create our dishes.
+            Whether you're looking for a quick bite or a sit-down meal, we hope
+            you'll come and experience the flavors of Nepal with us. Thank you
+            for choosing us!
+          </p>
+        </article>
+      </div>
+    </main>
     <!-- ========= MOBILE SIDEBAR ========= -->
     <div class="sidebar inset-0 fixed z-40 min-h-screen hidden">
       <div class="bg-black/50 absolute inset-0 animate-fade-in"></div>
@@ -130,115 +446,35 @@
       </div>
     </div>
 
-    <!-- =========== MAIN CONTENT =============== -->
-    <main class="container py-10">
-      <!-- ============== PAGE HEADER ============= -->
-      <div class="space-y-4 sm:space-y-6 pb-6 sm:pb-10">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-thin font-lexend">
-          Discover the Best Restaurants in Your City and Enjoy Delicious Meals
-        </h1>
-      </div>
-      <!-- ============== BANNER ============= -->
-      <div
-        class="relative overflow-hidden h-[40vh] sm:h-[50vh] md:h-[65vh] w-full group"
-        style="
-          clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
-        "
-      >
-        <img
-          src="https://images.unsplash.com/photo-1474898856510-884a2c0be546?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="banner"
-          className="object-cover object-center h-full w-full"
-        />
-      </div>
-
-      <!-- ================ CONTENT ================ -->
-      <section
-        class="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 py-8 sm:py-10"
-      >
-        <div>
-          <blockquote
-            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight flex items-start gap-x-1"
-          >
-            <span class="text-emerald-600">&quot;</span>
-            Real comfort, visual and physical, is vital to every room
-          </blockquote>
-        </div>
-        <div class="relative">
-          <p
-            class="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed font-lexend"
-          >
-            80 days around the world, we'll find a pot of gold just sitting
-            where the rainbow's ending. Time – we'll fight against the time, and
-            we'll fly on the white wings of the wind.
-          </p>
-          <!-- =========== SOCIAL MEDIA LINKS =========== -->
-          <div
-            class="flex md:block space-x-4 md:space-x-0 md:space-y-4 mt-8 md:mt-0 md:absolute md:top-0 md:-right-14"
-          >
-            <a
-              target="_blank"
-              class="h-10 w-10 flex items-center justify-center rounded-xl relative overflow-hidden group bg-blue-600 hover:bg-blue-800"
-              href=""
-            >
-              <div className="relative z-20">
-                <i class="fa fa-facebook"></i>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              class="h-10 w-10 flex items-center justify-center rounded-xl relative overflow-hidden group bg-pink-500 hover:bg-pink-700"
-              href=""
-            >
-              <div className="relative z-20">
-                <i class="fa fa-instagram"></i>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              class="h-10 w-10 flex items-center justify-center rounded-xl relative overflow-hidden group bg-blue-400 hover:bg-blue-600"
-              href=""
-            >
-              <div className="relative z-20">
-                <i class="fa fa-twitter"></i>
-              </div>
-            </a>
-            <a
-              target="_blank"
-              class="h-10 w-10 flex items-center justify-center rounded-xl relative overflow-hidden group bg-red-600 hover:bg-red-800"
-              href=""
-            >
-              <div className="relative z-20">
-                <i class="fa fa-youtube"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ ABOUT US =========== -->
-      <div class="mt-4 space-y-4">
-        <p class="text-base sm:text-lg">
-          Welcome to our restaurant guide! Here, you will find a curated list of
-          the best dining spots in your city. Whether you're looking for a cozy
-          cafe, a fine dining experience, or a quick bite, we've got you
-          covered. Explore our recommendations and enjoy delicious meals at the
-          top restaurants around you.
-        </p>
-        <ul class="list-disc list-inside space-y-1 text-base sm:text-lg">
-          <li>Cozy cafes with a warm ambiance</li>
-          <li>Fine dining restaurants for special occasions</li>
-          <li>Quick bites for a fast and tasty meal</li>
-          <li>Family-friendly places with great menus for kids</li>
-          <li>Hidden gems known only to locals</li>
-        </ul>
-      </div>
-    </main>
-
     <!-- =========== FOOTER =============== -->
     <footer id="footer" class="bg-[var(--muted)] py-4 text-center"></footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      const emblaNode = document.querySelector(".embla");
+      const options = {
+        loop: false,
+        dragFree: true,
+        autoplay: { delay: 0 },
+        containScroll: false,
+        align: "start",
+      };
+
+      const viewportNode = emblaNode.querySelector(".embla__viewport");
+      const plugins = [EmblaCarouselAutoplay()];
+      const emblaApi = EmblaCarousel(viewportNode, options, plugins);
+
+      const progressNode = emblaNode.querySelector(".embla__progress__bar");
+
+      const updateProgress = () => {
+        const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
+        progressNode.style.transform = `translateX(${progress * 100}%)`;
+      };
+
+      emblaApi.on("scroll", updateProgress);
+      emblaApi.on("reInit", updateProgress);
+    </script>
 
     <script src="/script.js"></script>
   </body>
