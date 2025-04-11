@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="/translations.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -32,6 +33,7 @@
             <a
               href="/sierra-japan-enterprises.html"
               class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              data-i18n="sierraJapan"
               >Sierra Japan Enterprises</a
             >
           </li>
@@ -39,6 +41,7 @@
             <a
               href="/nepali-dining.html"
               class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              data-i18n="nepaliDining"
               >NEPALI Dining</a
             >
           </li>
@@ -46,6 +49,7 @@
             <a
               href="/baral-engineering.html"
               class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              data-i18n="baralEngineering"
               >Baral Engineering</a
             >
           </li>
@@ -53,6 +57,7 @@
             <a
               href="/sasto-sulav-express.html"
               class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              data-i18n="sastoSulav"
               >Sasto Sulav Express</a
             >
           </li>
@@ -60,16 +65,25 @@
             <a
               href="/about.html"
               class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase"
+              data-i18n="about"
               >ABOUT</a
             >
           </li>
         </ul>
-        <button id="openSidebar" class="lg:hidden block pr-4">
-          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-        </button>
+        <div class="flex items-center gap-x-4">
+          <select
+            id="languageSelect"
+            class="bg-transparent border-none outline-none"
+          >
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+          <button id="openSidebar" class="lg:hidden block pr-4">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+          </button>
+        </div>
       </nav>
     </header>
-
     <!-- ========= MOBILE SIDEBAR ========= -->
     <div class="sidebar inset-0 fixed z-40 min-h-screen hidden">
       <div class="bg-black/50 absolute inset-0 animate-fade-in"></div>
@@ -83,45 +97,59 @@
               <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </button>
           </div>
-          <ul class="font-medium text-sm space-y-6" id="sidebarLinks">
-            <li>
-              <a
-                href="/sierra-japan-enterprises.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
-                >Sierra Japan Enterprises</a
-              >
-            </li>
-            <li>
-              <a
-                href="/nepali-dining.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
-                >NEPALI Dining</a
-              >
-            </li>
-            <li>
-              <a
-                href="/baral-engineering.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
-                >Baral Engineering</a
-              >
-            </li>
-            <li>
-              <a
-                href="/sasto-sulav-express.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
-                >Sasto Sulav Express</a
-              >
-            </li>
-            <li>
-              <a
-                href="/about.html"
-                class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
-                >ABOUT</a
-              >
-            </li>
-          </ul>
+          <div class="flex flex-col items-start gap-y-3 w-full">
+            <select
+              id="mobileLangSelect"
+              class="bg-transparent border border-[var(--border)] rounded-md p-2 w-full"
+            >
+              <option value="ja">日本語</option>
+              <option value="en">English</option>
+            </select>
+            <ul class="font-medium text-sm space-y-6" id="sidebarLinks">
+              <li>
+                <a
+                  href="/sierra-japan-enterprises.html"
+                  class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  >Sierra Japan Enterprises</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="nepaliDining"
+                  href="/nepali-dining.html"
+                  class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  >NEPALI Dining</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="baralEngineering"
+                  href="/baral-engineering.html"
+                  class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  >Baral Engineering</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="sastoSulav"
+                  href="/sasto-sulav-express.html"
+                  class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  >Sasto Sulav Express</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="about"
+                  href="/about.html"
+                  class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  >ABOUT</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <button
+          data-i18n="close"
           id="closeSidebarButton"
           class="py-2 px-4 rounded-md bg-[var(--accent)] w-full"
         >
