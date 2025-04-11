@@ -2,6 +2,46 @@ AOS.init({
   once: true,
 });
 
+let currentLanguage = localStorage.getItem("language") || "ja";
+
+function updateContent(lang) {
+  currentLanguage = lang;
+  document.documentElement.lang = lang;
+  localStorage.setItem("language", lang);
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateContent(currentLanguage);
+
+  const languageSelect = document.getElementById("languageSelect");
+  const mobileLangSelect = document.getElementById("mobileLangSelect");
+
+  if (languageSelect) {
+    languageSelect.value = currentLanguage;
+    languageSelect.addEventListener("change", (e) => {
+      const newLang = e.target.value;
+      updateContent(newLang);
+      if (mobileLangSelect) mobileLangSelect.value = newLang;
+    });
+  }
+
+  if (mobileLangSelect) {
+    mobileLangSelect.value = currentLanguage;
+    mobileLangSelect.addEventListener("change", (e) => {
+      const newLang = e.target.value;
+      updateContent(newLang);
+      if (languageSelect) languageSelect.value = newLang;
+    });
+  }
+});
+
 function setActiveLink() {
   const currentPath = window.location.pathname;
   const nav = document.getElementById("nav");
@@ -36,22 +76,35 @@ if (footerText) {
 
 setActiveLink();
 
-const openSidebar = document.getElementById("openSidebar");
-const closeSidebar = document.getElementById("closeSidebar");
+const homeSidebarBtn = document.getElementById("homeSidebarButton");
 const sidebar = document.querySelector(".sidebar");
+const openSidebarButton = document.getElementById("openSidebar");
 const closeSidebarButton = document.getElementById("closeSidebarButton");
+const closeSidebar = document.getElementById("closeSidebar");
 
-openSidebar.addEventListener("click", () => {
-  sidebar.classList.remove("hidden");
-  document.body.style.overflow = "hidden";
+if (homeSidebarBtn) {
+  homeSidebarBtn.addEventListener("click", () => {
+    sidebar?.classList.remove("hidden");
+  });
+  sidebar?.addEventListener("click", (e) => {
+    if (e.target === sidebar) {
+      sidebar?.classList.add("hidden");
+    }
+  });
+}
+openSidebarButton?.addEventListener("click", () => {
+  sidebar?.classList.remove("hidden");
 });
 
-closeSidebar.addEventListener("click", () => {
-  sidebar.classList.add("hidden");
-  document.body.style.overflow = "auto";
-});
+const closeSidebarFn = () => {
+  sidebar?.classList.add("hidden");
+};
 
-closeSidebarButton.addEventListener("click", () => {
-  sidebar.classList.add("hidden");
-  document.body.style.overflow = "auto";
+closeSidebarButton?.addEventListener("click", closeSidebarFn);
+closeSidebar?.addEventListener("click", closeSidebarFn);
+
+sidebar?.addEventListener("click", (e) => {
+  if (e.target === sidebar) {
+    closeSidebarFn();
+  }
 });
