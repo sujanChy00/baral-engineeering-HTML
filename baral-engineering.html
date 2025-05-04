@@ -3,7 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Baral Engineering - Professional Engineering Solutions</title>
+    <meta
+      name="description"
+      content="Baral Engineering provides professional engineering solutions, innovative designs, and technical expertise. Quality engineering services for your projects."
+    />
+    <meta
+      name="keywords"
+      content="engineering solutions, professional engineering, technical services, baral engineering, project design"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Baral Engineering - Professional Engineering Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Professional engineering solutions and technical expertise for your projects."
+    />
+    <meta property="og:image" content="/assets/logo.png" />
+    <meta
+      property="og:url"
+      content="https://baralbrothers.com/baral-engineering.html"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Baral Engineering - Professional Engineering Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional engineering solutions and technical expertise for your projects."
+    />
+    <meta
+      property="twitter:url"
+      content="https://baralbrothers.com/baral-engineering.html"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -110,6 +169,7 @@
                 <a
                   href="/sierra-japan-enterprises.html"
                   class="py-2 px-3 rounded-xl hover:bg-[var(--secondary)] uppercase block w-full"
+                  data-i18n="sierraJapan"
                   >Sierra Japan Enterprises</a
                 >
               </li>
@@ -162,10 +222,13 @@
     <main class="md:pb-10 lg:pt-20 pt-10">
       <!-- =========== PAGE BANNER ============== -->
 
-      <div class="grid grid-cols-12 lg:min-h-[60dvh] overflow-hidden px-5">
+      <div
+        class="grid grid-cols-12 lg:min-h-[60dvh] items-center overflow-hidden px-5"
+      >
         <section class="col-span-12 lg:col-span-4">
           <h1
             class="text-4xl lg:text-5xl xl:text-6xl font-thin font-lexend leading-tight lg:leading-[4.5rem] xl:leading-[5.5rem] tracking-wide xl:tracking-widest"
+            data-i18n="discoverLatest"
           >
             DISCOVER THE LATEST IN ENGINEERING AND TECHNOLOGY INNOVATIONS AND
             TRENDS
@@ -199,14 +262,19 @@
             class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 gap-8 md:gap-10"
           >
             <div class="flex-1 space-y-4 sm:space-y-6 text-center md:text-left">
-              <h2
-                class="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-slate-800 leading-tight"
+              <div
+                class="flex items-center text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-tight gap-x-2"
               >
-                Prevent costly
-                <span class="text-blue-500 font-semibold">mistakes</span>
-              </h2>
+                <h2 class="text-slate-800" data-i18n="preventCostly">
+                  Prevent costly
+                </h2>
+                <span class="text-blue-500 font-semibold" data-i18n="mistakes">
+                  mistakes
+                </span>
+              </div>
               <p
                 class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto md:mx-0 font-light"
+                data-i18n="createTemplates"
               >
                 Create pre-approved templates and lock all legal information.
               </p>
@@ -217,8 +285,8 @@
                 <span
                   class="absolute inset-0 bg-[linear-gradient(110deg,#4f46e5,#3b82f6,#60a5fa,#3b82f6,#4f46e5)] bg-[length:200%_100%] animate-shimmer-x"
                 ></span>
-                <span class="relative z-10 flex items-center gap-2">
-                  Let's Connect
+                <p class="relative z-10 flex items-center gap-2">
+                  <span data-i18n="letsConnect">Let's Connect</span>
                   <svg
                     class="ml-1 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 group-hover:translate-x-1"
                     viewBox="0 0 24 24"
@@ -228,19 +296,7 @@
                   >
                     <path d="M5 12h14m-7-7l7 7-7 7" />
                   </svg>
-                  <!-- <ArrowRight
-                className={`ml-1 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 ${isHovered ? "translate-x-1" : ""}`}
-              /> -->
-                </span>
-                <svg
-                  class="ml-2 w-4 h-4 text-white"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M5 12h14m-7-7l7 7-7 7" />
-                </svg>
+                </p>
                 <span
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:animate-shimmer-shine"
                 ></span>
@@ -262,7 +318,12 @@
 
         <!-- =========== FACILITIES =========== -->
         <section class="md:space-y-6 space-y-10">
-          <h3 class="md:text-5xl text-4xl font-semibold">Our Top Facilities</h3>
+          <h3
+            class="md:text-5xl text-4xl font-semibold"
+            data-i18n="ourTopFacilities"
+          >
+            Our Top Facilities
+          </h3>
           <!-- ============= FACILITIES CARDS =========== -->
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div
@@ -275,10 +336,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="hipaaCompliant"
               >
                 HIPAA and SOC2 Compliant
               </p>
               <p
+                data-i18n="hipaaDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Our applications are HIPAA and SOC2 compliant, your data is safe
@@ -295,10 +358,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="socialMedia"
               >
                 Automated Social Media Posting
               </p>
               <p
+                data-i18n="socialMediaDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Schedule and automate your social media posts across multiple
@@ -316,10 +381,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="analytics"
               >
                 Advanced Analytics
               </p>
               <p
+                data-i18n="analyticsDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Gain insights into your social media performance with detailed
@@ -336,10 +403,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="calendar"
               >
                 Content Calendar
               </p>
               <p
+                data-i18n="calendarDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Plan and organize your social media content with an intuitive
@@ -356,10 +425,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="audience"
               >
                 Audience Targeting
               </p>
               <p
+                data-i18n="audienceDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Reach the right audience with advanced targeting options,
@@ -376,10 +447,12 @@
               />
               <p
                 class="text-base font-bold text-neutral-800 dark:text-white relative z-20"
+                data-i18n="listening"
               >
                 Social Listening
               </p>
               <p
+                data-i18n="listeningDesc"
                 class="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20"
               >
                 Monitor social media conversations and trends to stay informed
@@ -391,26 +464,29 @@
 
         <!-- ================ ABOUT ================= -->
         <article class="space-y-6">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold">
-            Who are we ?
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-semibold"
+            data-i18n="whoAreWe"
+          >
+            Who are we?
           </h1>
-          <p class="text-sm sm:text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum
-            nam blanditiis inventore aliquam tempora aspernatur laborum nostrum
-            iste minus. Error fuga facere obcaecati quo voluptas ad ullam enim
-            earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Illo quod cumque ipsa eius officiis repudiandae nostrum
-            reprehenderit exercitationem assumenda nesciunt tempora, atque rem
-            veritatis blanditiis placeat nisi quo eum, porro aliquam saepe
-            suscipit consectetur sit veniam quae. Reprehenderit non, earum dicta
-            necessitatibus eius beatae repellendus deleniti amet dignissimos?
-            Eaque ipsum, consequuntur molestias voluptate perspiciatis error,
-            accusantium quibusdam voluptatem inventore eius illo fugit
-            dignissimos modi soluta veniam in officia dolores architecto!
-            Cupiditate numquam maiores fugiat, quisquam vel sint odit possimus
-            corrupti quis? Officiis recusandae ipsa sequi, excepturi eaque
-            voluptatum tempora quasi facere laborum veritatis quam illo sunt
-            numquam, eius ut dolor!
+          <p class="text-sm sm:text-base md:text-lg" data-i18n="aboutBaralEng">
+            Baral Engineering is a forward-thinking engineering firm
+            specializing in innovative technological solutions and advanced
+            engineering services. Founded with a commitment to excellence, we
+            bring together expertise in software development, system
+            integration, and technical consulting to deliver comprehensive
+            solutions for businesses across Japan. Our team of skilled engineers
+            and technology experts excels in creating custom software
+            applications, implementing automation systems, and providing
+            technical support that helps organizations optimize their operations
+            and stay competitive in today's digital landscape. We pride
+            ourselves on our ability to understand complex technical challenges
+            and develop efficient, scalable solutions that drive business growth
+            and innovation. With a focus on quality, reliability, and
+            cutting-edge technology, Baral Engineering continues to be a trusted
+            partner for businesses seeking to leverage technology for their
+            success.
           </p>
         </article>
       </div>

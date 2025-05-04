@@ -3,7 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Baral Brothers - Leading Business Group in Japan</title>
+    <meta
+      name="description"
+      content="Baral Brothers is a leading business group in Japan, specializing in engineering, dining, groceries, and enterprise solutions."
+    />
+    <meta
+      name="keywords"
+      content="Baral Brothers, Baral Engineering, Nepali Dining, Sasto Sulav Express, Sierra Japan Enterprises"
+    />
+    <meta name="author" content="Baral Brothers" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://baralbrothers.com/" />
+    <meta
+      property="og:title"
+      content="Baral Brothers - Leading Business Group in Japan"
+    />
+    <meta
+      property="og:description"
+      content="Baral Brothers is a leading business group in Japan, specializing in engineering, dining, groceries, and enterprise solutions."
+    />
+    <meta property="og:image" content="/assets/home_mobile_bg.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://baralbrothers.com/" />
+    <meta
+      property="twitter:title"
+      content="Baral Brothers - Leading Business Group in Japan"
+    />
+    <meta
+      property="twitter:description"
+      content="Baral Brothers is a leading business group in Japan, specializing in engineering, dining, groceries, and enterprise solutions."
+    />
+    <meta property="twitter:image" content="/assets/home_mobile_bg.png" />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -183,6 +238,7 @@
             <h3
               class="text-center text-3xl font-semibold font-atma text-[var(--muted)]"
               data-aos="zoom-out"
+              data-i18n="servingCommunity"
             >
               Serving the community for years.
             </h3>
@@ -197,6 +253,7 @@
             </div>
             <div class="flex justify-center pt-3">
               <a
+                data-i18n="exploreMore"
                 href="#featuredTopics"
                 class="rounded-full bg-gradient-to-r from-[var(--primary)] to-[#6192B3] text-white px-4 py-2"
               >
@@ -229,9 +286,10 @@
                 class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
               ></div>
               <h3
+                data-i18n="baralEngineering"
                 class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
               >
-                W Baral Engineering
+                Baral Engineering
               </h3>
             </a>
 
@@ -253,6 +311,7 @@
                   class="absolute inset-0 dark:bg-white/50 bg-white/20 md:opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out"
                 ></div>
                 <h3
+                  data-i18n="nepaliDining"
                   class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
                 >
                   Nepali Dining
@@ -274,6 +333,7 @@
                 ></div>
                 <h3
                   class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+                  data-i18n="sastoSulav"
                 >
                   Sasto Sulav Express
                 </h3>
@@ -295,6 +355,7 @@
               ></div>
               <h3
                 class="z-10 text-2xl font-medium absolute bottom-0 left-0 p-4 xs:text-xl md:text-3xl md:translate-y-full group-hover:translate-y-0 duration-200 delay-100"
+                data-i18n="sierraJapan"
               >
                 Sierra Japan Enterprises
               </h3>
@@ -325,6 +386,7 @@
         <!-- ========= FEATURED TOPICS =========== -->
         <section id="featuredTopics" class="py-20 md:pt-36 pt-20 space-y-10">
           <h1
+            data-i18n="exploreFeaturedTopics"
             class="text-xl uppercase text-[var(--muted-foreground)] font-semibold text-center"
           >
             Explore Featured Topics
@@ -334,38 +396,38 @@
           >
             <a href="baral-engineering.html">
               <div
-                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)] flex items-center"
               >
                 <i class="fa fa-desktop" aria-hidden="true"></i>
 
-                Technology
+                <p data-i18n="technology">Technology</p>
               </div>
             </a>
             <a href="sierra-japan-enterprises.html">
               <div
-                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full flex items-center font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
               >
                 <i class="fa fa-plane" aria-hidden="true"></i>
 
-                Sierra Japan Enterprises
+                <p data-i18n="sierraJapan">Sierra Japan Enterprises</p>
               </div>
             </a>
             <a href="sasto-sulav-express.html">
               <div
-                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)] flex items-center"
               >
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
 
-                Groceries
+                <p data-i18n="groceries">Groceries></p>
               </div>
             </a>
             <a href="nepali-dining.html">
               <div
-                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
+                class="gap-2 md:py-3 py-2 md:px-4 px-3 hover:bg-[var(--muted)] cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 shadow-xl rounded-full flex items-center font-bold md:text-xl bg-white border border-[var(--border)] text-[var(--muted-foreground)]"
               >
                 <i class="fa fa-glass" aria-hidden="true"></i>
 
-                Nepali Dining
+                <p data-i18n="nepaliDining" class="capitalize">Nepali Dining</p>
               </div>
             </a>
           </div>
@@ -389,14 +451,19 @@
           </div>
           <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
             <div class="space-y-6">
-              <h3 class="lg:text-5xl text-4xl font-semibold">
+              <h3
+                class="lg:text-5xl text-4xl font-semibold"
+                data-i18n="baralEngineering"
+              >
                 Baral Engineering
               </h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                vel, sequi facilis perferendis recusandae deserunt deleniti ea
-                repudiandae velit aperiam incidunt cumque similique dicta
-                excepturi nesciunt sint, esse odio maiores?
+              <p data-i18n="baralEngineeringDesc">
+                Baral Engineering leads the way in innovative IT solutions and
+                software development. We specialize in custom software
+                development, mobile applications, and enterprise solutions that
+                drive business growth. Our team of skilled engineers combines
+                technical expertise with creative problem-solving to deliver
+                cutting-edge solutions for our clients.
               </p>
             </div>
             <div>
@@ -404,7 +471,10 @@
                 <button
                   class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
                 >
-                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                  <span
+                    data-i18n="knowMore"
+                    class="z-10 pr-2 group-hover:text-white capitalize"
+                  >
                     Know More
                   </span>
                   <div
@@ -441,14 +511,18 @@
             data-aos="fade-up"
           >
             <div class="space-y-6">
-              <h3 class="lg:text-5xl text-4xl font-semibold">
+              <h3
+                class="lg:text-5xl text-4xl font-semibold"
+                data-i18n="sastoSulav"
+              >
                 Sasto Sulav Express
               </h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                vel, sequi facilis perferendis recusandae deserunt deleniti ea
-                repudiandae velit aperiam incidunt cumque similique dicta
-                excepturi nesciunt sint, esse odio maiores?
+              <p data-i18n="sastoSulavDesc">
+                Your premier destination for authentic South Asian groceries in
+                Japan. We bring the flavors of Nepal and South Asia directly to
+                your doorstep, offering a wide selection of spices, lentils,
+                rice, and traditional ingredients. Our express delivery service
+                ensures fresh and quality products reach you quickly.
               </p>
             </div>
             <div>
@@ -456,7 +530,10 @@
                 <button
                   class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
                 >
-                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                  <span
+                    data-i18n="knowMore"
+                    class="z-10 pr-2 group-hover:text-white capitalize"
+                  >
                     Know More
                   </span>
                   <div
@@ -510,12 +587,18 @@
           </div>
           <div class="col-span-12 lg:col-span-6 space-y-10" data-aos="fade-up">
             <div class="space-y-6">
-              <h3 class="lg:text-5xl text-4xl font-semibold">Nepali Dining</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                vel, sequi facilis perferendis recusandae deserunt deleniti ea
-                repudiandae velit aperiam incidunt cumque similique dicta
-                excepturi nesciunt sint, esse odio maiores?
+              <h3
+                class="lg:text-5xl text-4xl font-semibold"
+                data-i18n="nepaliDining"
+              >
+                Nepali Dining
+              </h3>
+              <p data-i18n="nepaliDiningDesc">
+                Experience the authentic taste of Nepal in the heart of Japan.
+                Our restaurant serves traditional Nepali cuisine prepared by
+                expert chefs, offering a perfect blend of flavors and spices.
+                From classic momos to rich curries, we bring the warmth and
+                hospitality of Nepal to your dining experience.
               </p>
             </div>
             <div>
@@ -523,7 +606,10 @@
                 <button
                   class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
                 >
-                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                  <span
+                    data-i18n="knowMore"
+                    class="z-10 pr-2 group-hover:text-white capitalize"
+                  >
                     Know More
                   </span>
                   <div
@@ -560,14 +646,18 @@
             a-aos="fade-up"
           >
             <div class="space-y-6">
-              <h3 class="lg:text-5xl text-4xl font-semibold">
+              <h3
+                class="lg:text-5xl text-4xl font-semibold"
+                data-i18n="sierraJapan"
+              >
                 Sierra Japan Enterprises
               </h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                vel, sequi facilis perferendis recusandae deserunt deleniti ea
-                repudiandae velit aperiam incidunt cumque similique dicta
-                excepturi nesciunt sint, esse odio maiores?
+              <p data-i18n="sierraJapanDesc">
+                Sierra Japan Enterprises bridges cultural and business gaps
+                between Japan and Nepal. We provide comprehensive business
+                consulting, market entry strategies, and cultural exchange
+                programs. Our expertise helps businesses navigate international
+                markets while fostering meaningful cross-cultural connections.
               </p>
             </div>
             <div>
@@ -575,7 +665,10 @@
                 <button
                   class="group relative h-[calc(48px+8px)] rounded-full border border-[var(--primary)] py-1 pr-14 font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] shadow-sm flex items-center px-4"
                 >
-                  <span class="z-10 pr-2 group-hover:text-white capitalize">
+                  <span
+                    data-i18n="knowMore"
+                    class="z-10 pr-2 group-hover:text-white capitalize"
+                  >
                     Know More
                   </span>
                   <div
