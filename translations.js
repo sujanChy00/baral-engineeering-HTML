@@ -1,6 +1,6 @@
 const translations = {
   ja: {
-    // Navigation
+    // =========== Navigation ==============
     sierraJapan: "シエラ・ジャパン・エンタープライズ",
     nepaliDining: "ネパール料理",
     baralEngineering: "バラルエンジニアリング",
@@ -8,7 +8,7 @@ const translations = {
     about: "について",
     close: "閉じる",
 
-    // HOME PAGE
+    // =========== HOME PAGE ==============
     knowMore: "もっと知る",
     groceries: "食料品",
     technology: "テクノロジー",
@@ -16,7 +16,7 @@ const translations = {
     exploreMore: "もっと詳しく見る",
     servingCommunity: "長年にわたりコミュニティに貢献しています。",
 
-    // HOME CONTENT DESCRIPTIONS
+    // =========== HOME PAGE (HOME CONTENT DESCRIPTIONS) ==============
     baralEngineeringDesc:
       "バラルエンジニアリングは、革新的なITソリューションとソフトウェア開発をリードしています。カスタムソフトウェア開発、モバイルアプリケーション、そしてビジネス成長を促進するエンタープライズソリューションを専門としています。熟練したエンジニアチームが、技術的専門知識と創造的な問題解決を組み合わせて、クライアントに最先端のソリューションを提供しています。",
     sastoSulavDesc:
@@ -26,7 +26,7 @@ const translations = {
     sierraJapanDesc:
       "シエラジャパンエンタープライズは、日本とネパールの文化とビジネスの架け橋となっています。包括的なビジネスコンサルティング、市場参入戦略、文化交流プログラムを提供しています。私たちの専門知識は、意味のある異文化間の繋がりを育みながら、企業が国際市場を開拓するのを支援します。",
 
-    // NEPALI DINING PAGE
+    // =========== NEPALI DINING PAGE ==============
     nepali: "ネパール",
     cuisines: "料理",
     seeMenu: "メニューを見る",
@@ -45,7 +45,7 @@ const translations = {
     aboutDescription:
       "私たちは20年以上にわたって本格的なネパール料理を提供している家族経営のレストランです。私たちの使命は、お客様に温かく居心地の良い雰囲気、美味しい料理、そして卓越したサービスを提供することです。新鮮な食材と伝統的な調理法にこだわり、心を込めて料理を作っています。気軽な一品からゆっくりとしたお食事まで、ネパールの味をぜひご体験ください。ご来店をお待ちしております。",
 
-    // SIERRA JAPAN ENTERPRISES PAGE
+    // ============== SIERRA JAPAN ENTERPRISES PAGE ==============
     exploreWonders: "旅行と観光の素晴らしさを探る",
     realComfort: "本当の快適さ、視覚的にも物理的にも、すべての部屋に不可欠です",
     aroundWorld:
@@ -58,7 +58,7 @@ const translations = {
     familyFriendly: "子供向けの素晴らしいメニューがある家族向けの場所",
     hiddenGems: "地元の人だけが知る隠れた名店",
 
-    // BARAL ENGINEERING PAGE
+    // ============== BARAL ENGINEERING PAGE ==============
     discoverLatest:
       "エンジニアリングとテクノロジーの最新イノベーションとトレンドを発見する",
     preventCostly: "コストのかかるミスを防止",
@@ -89,7 +89,7 @@ const translations = {
     aboutBaralEng:
       "バラルエンジニアリングは、革新的な技術ソリューションと先進的なエンジニアリングサービスを専門とする先進的なエンジニアリング企業です。卓越性への取り組みを基に設立され、ソフトウェア開発、システム統合、技術コンサルティングの専門知識を結集して、日本全国のビジネスに包括的なソリューションを提供しています。熟練したエンジニアと技術専門家のチームは、カスタムソフトウェアアプリケーションの作成、自動化システムの実装、組織が業務を最適化し、今日のデジタル環境で競争力を維持するのに役立つ技術サポートの提供に優れています。私たちは、複雑な技術的課題を理解し、ビジネスの成長とイノベーションを促進する効率的でスケーラブルなソリューションを開発する能力を誇りにしています。品質、信頼性、最先端の技術に焦点を当て、バラルエンジニアリングは、技術を活用して成功を収めようとするビジネスの信頼できるパートナーであり続けています。",
 
-    // ABOUT PAGE
+    // ============== ABOUT PAGE ==============
     baralBrothers: "バラル＆ブラザーズ",
     whoWeAre: "私たちは誰ですか？",
     whoWeAreDesc:
@@ -99,7 +99,7 @@ const translations = {
       "私たちは4つの異なるビジネスを運営しています：輸出入を専門とするシエラジャパンエンタープライズ、本格的な料理を提供するネパールダイニング、技術的ソリューションを提供するバラルエンジニアリング、そして高品質の食料品を届けるサストスラブエクスプレスです。各事業は、卓越性への私たちのコミットメントと、多様で質の高いサービスで日本市場を豊かにするという目標を反映しています。",
     followUs: "フォローする",
 
-    // SASTO SULAV EXPRESS PAGE
+    // ============== SASTO SULAV EXPRESS PAGE ==============
     shopNow: "今すぐ購入",
     sastoSulavExpress: "サストスラブエクスプレス",
     sastoSulavDesc2:
@@ -117,7 +117,7 @@ const translations = {
     groceryStore: "食料品店",
   },
   en: {
-    // Navigation
+    // =========== Navigation ==============
     sierraJapan: "Sierra Japan Enterprises",
     nepaliDining: "Nepali Dining",
     baralEngineering: "Baral Engineering",
@@ -125,7 +125,7 @@ const translations = {
     about: "ABOUT",
     close: "Close",
 
-    // HOME PAGE
+    // =========== HOME PAGE ==============
     knowMore: "Know more",
     groceries: "Groceries",
     technology: "Technology",
@@ -133,7 +133,7 @@ const translations = {
     exploreMore: "Explore more",
     servingCommunity: "Serving the community for years.",
 
-    // HOME CONTENT DESCRIPTIONS
+    // =========== HOME PAGE (HOME CONTENT DESCRIPTIONS) ==============
     baralEngineeringDesc:
       "Baral Engineering leads the way in innovative IT solutions and software development. We specialize in custom software development, mobile applications, and enterprise solutions that drive business growth. Our team of skilled engineers combines technical expertise with creative problem-solving to deliver cutting-edge solutions for our clients.",
     sastoSulavDesc:
@@ -143,7 +143,7 @@ const translations = {
     sierraJapanDesc:
       "Sierra Japan Enterprises bridges cultural and business gaps between Japan and Nepal. We provide comprehensive business consulting, market entry strategies, and cultural exchange programs. Our expertise helps businesses navigate international markets while fostering meaningful cross-cultural connections.",
 
-    // NEPALI DINING PAGE
+    // ============== NEPALI DINING PAGE ================
     nepali: "Nepali",
     cuisines: "Cuisines",
     seeMenu: "see menu",
@@ -162,7 +162,7 @@ const translations = {
     aboutDescription:
       "We are a family-owned restaurant that has been serving authentic Nepali cuisine for over 20 years. Our mission is to provide our customers with a warm and welcoming atmosphere, delicious food, and exceptional service. We take pride in using only the freshest ingredients and traditional cooking methods to create our dishes. Whether you're looking for a quick bite or a sit-down meal, we hope you'll come and experience the flavors of Nepal with us. Thank you for choosing us!",
 
-    // SIERRA JAPAN ENTERPRISES PAGE
+    // ============== SIERRA JAPAN ENTERPRISES PAGE =============
     exploreWonders: "Explore the Wonders of Travel and Tourism",
     realComfort: "Real comfort, visual and physical, is vital to every room",
     aroundWorld:
@@ -175,7 +175,7 @@ const translations = {
     familyFriendly: "Family-friendly places with great menus for kids",
     hiddenGems: "Hidden gems known only to locals",
 
-    // BARAL ENGINEERING PAGE
+    // ============ BARAL ENGINEERING PAGE ==============
     discoverLatest:
       "DISCOVER THE LATEST IN ENGINEERING AND TECHNOLOGY INNOVATIONS AND TRENDS",
     preventCostly: "Prevent costly",
@@ -206,7 +206,7 @@ const translations = {
     aboutBaralEng:
       "Baral Engineering is a forward-thinking engineering firm specializing in innovative technological solutions and advanced engineering services. Founded with a commitment to excellence, we bring together expertise in software development, system integration, and technical consulting to deliver comprehensive solutions for businesses across Japan. Our team of skilled engineers and technology experts excels in creating custom software applications, implementing automation systems, and providing technical support that helps organizations optimize their operations and stay competitive in today's digital landscape. We pride ourselves on our ability to understand complex technical challenges and develop efficient, scalable solutions that drive business growth and innovation. With a focus on quality, reliability, and cutting-edge technology, Baral Engineering continues to be a trusted partner for businesses seeking to leverage technology for their success.",
 
-    // ABOUT PAGE
+    // ========== ABOUT PAGE ==========
     baralBrothers: "Baral & Brothers",
     whoWeAre: "Who are we?",
     whoWeAreDesc:
@@ -216,7 +216,7 @@ const translations = {
       "We operate four distinct businesses: Sierra Japan Enterprises specializing in import-export, Nepali Dining offering authentic cuisine, Baral Engineering providing technical solutions, and Sasto Sulav Express delivering quality groceries. Each venture reflects our commitment to excellence and our goal of enriching the Japanese market with diverse, quality services.",
     followUs: "Follow us on",
 
-    // SASTO SULAV EXPRESS PAGE
+    // =========== SASTO SULAV EXPRESS PAGE ==========
     shopNow: "Shop Now",
     sastoSulavExpress: "Sasto Sulav Express",
     sastoSulavDesc2:
